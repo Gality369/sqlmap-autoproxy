@@ -20,7 +20,7 @@ config sqlmap use proxy automatically(自动获取代理IP)
 >             conf.proxyList.append("http://"+line)
 >         return
 > ```
-> ![修改2](https://s1.ax1x.com/2020/08/06/acgJF1.png)
+图示:https://s1.ax1x.com/2020/08/06/ac5kct.png
 
 ## Usage
 使用sqlmap时添加参数: --proxy-file auto 一定要是auto
