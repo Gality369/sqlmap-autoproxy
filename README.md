@@ -29,3 +29,5 @@ config sqlmap use proxy automatically(自动获取代理IP)
 其实就是自己实现了一个自动获取代理的脚本,自动检测可用性后记录到文件,在sqlmap的init函数中,调用了`_setProxyList()`函数,该函数用于将代理文件中的IP放入conf.proxyList中,sqlmap会从这个列表中自动获取代理.所以魔改该函数使得当--proxy-file的值为auto时,自动调用获取代理的脚本,使用获取到的IP作为sqlmap的代理.
 
 **autoproxy.py可以单独使用,生成的proxy.txt在autoproxy的同级目录中**
+
+展示:https://s1.ax1x.com/2020/08/06/agx7vT.png
